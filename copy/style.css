@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+@keyframes sujan {
+    0% {
+        border: 2px solid red;
+    }
+    10% {
+        border: 2px solid yellow;
+    }
+    20% {
+        border: 2px solid orange;
+    }
+    30% {
+        border: 2px solid brown;
+    }
+    40% {
+        border: 2px solid white;
+    }
+    50% {
+        border: 2px solid green;
+    }
+    60% {
+        border: 2px solid black;
+    }
+    70% {
+        border: 2px solid pink;
+    }
+    80% {
+        border: 2px solid palegreen;
+    }
+    90% {
+        border: 2px solid olive;
+    }
+    100% {
+        border: 2px solid navy;
+    }
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background: #ffabab;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    height: 30%;
+    padding: 1rem;
+    background: #ffabab;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+}
+
+.container video {
+    width: 60%;
+    height: 90%;
+    padding: 0%;
+    border-radius: 2rem;
+    margin-top: 10rem;
+    background-color: #c88970;
+    border: 1px solid red;
+}
+
+.container h1 {
+    font-size: 9rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #c88970;
+}
+
+.qoutes {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 15%;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+/* MY NAME */
+
+.name {
+    position: absolute;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 3px #ff021770;
+    text-emphasis-style: initial;
+    font-weight: 100;
+    padding: 1rem;
+    margin: 1rem;
+    top: 25%;
+}
+
+.qoutes h2 {
+    position: relative;
+    font-size: 1rem;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 3.5rem;
+}
+
+
+/* nav  */
+
+.nav {
+    text-align: center;
+    font-size: large;
+    margin: 0;
+    padding: 1.99rem;
+    font-size: 2rem;
+    background: #ffabab;
+    background-color: #ff001593;
+    position: relative;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2.5rem;
+    border-radius: 12px;
+    animation: sujan 2s infinite;
+}
+
+
+/* name sujan pradhna  hover */
+
+#ho:hover {
+    border-radius: 12px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-shadow: 2px 4px #ff0000;
+}
+
+li a:hover {
+    background-color: rgb(142, 26, 26);
+    border: 1px solid white;
+    border-radius: 12px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 2px #ff0000;
+    /* animation: sujan; */
+}
+
+li a {
+    display: block;
+    padding: 8px;
+}
+
+
+/* media  */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Default Design */
+
+
+/* For Desktop View */
+
+@media screen and (min-width: 1024px) {
+    .container h1 {
+        font-size: 8rem;
+        font-weight: bolder;
+    }
+    .qoutes h2 {
+        position: relative;
+        font-size: 1rem;
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 2.5rem;
+    }
+}
+
+
+/* For Tablet View */
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .container h1 {
+        font-size: 5.5rem;
+        font-weight: bolder;
+    }
+    .qoutes {
+        bottom: 6%;
+        /* margin-left: .5rem; */
+        /* margin-right: 1rem; */
+    }
+    .qoutes h2 {
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    .name {
+        font-size: 2.5rem;
+        top: 26%;
+    }
+}
+
+
+/* For Mobile Portrait View */
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .container h1 {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        top: 17rem;
+        /* bottom: 0rem; */
+    }
+    .qoutes {
+        font-size: 1rem;
+        font-weight: bolder;
+        bottom: 1.5rem;
+    }
+    .qoutes h2 {
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+    .name {
+        font-size: 1rem;
+        top: 40%;
+    }
+}
+
+
+/* For Mobile Landscape View */
+
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+    /* clock  */
+    .container h1 {
+        font-size: 2.5rem;
+        font-weight: bolder;
+        top: 20rem;
+        /* bottom: 0rem; */
+    }
+    .qoutes {
+        font-size: 1rem;
+        font-weight: bolder;
+        bottom: 2rem;
+    }
+    .qoutes h2 {
+        font-size: 1.2rem;
+        font-weight: bolder;
+    }
+    .name {
+        font-size: 1rem;
+        top: 35%;
+    }
+}
+
+
+/* For Mobile Phones Portrait or Landscape View */
+
+@media screen and (max-device-width: 640px) {
+    /* clock  */
+    .container h1 {
+        font-size: 2.5rem;
+        font-weight: bolder;
+        top: 20rem;
+        /* bottom: 0rem; */
+    }
+    .qoutes {
+        font-size: 1rem;
+        font-weight: bolder;
+        bottom: 2rem;
+    }
+    .qoutes h2 {
+        font-size: 1.2rem;
+        font-weight: bolder;
+    }
+    .name {
+        font-size: 1rem;
+        top: 35%;
+    }
+}
+
+
+/* For iPhone 5 Portrait or Landscape View */
+
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    /* clock  */
+    .container h1 {
+        font-size: 2.5rem;
+        font-weight: bolder;
+        top: 20rem;
+        /* bottom: 0rem; */
+    }
+    .qoutes {
+        font-size: 1rem;
+        font-weight: bolder;
+        bottom: 2rem;
+    }
+    .qoutes h2 {
+        font-size: 1.2rem;
+        font-weight: bolder;
+    }
+    .name {
+        font-size: 1rem;
+        top: 35%;
+    }
+}
+
+
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
+    /* clock  */
+    .container h1 {
+        font-size: 2.5rem;
+        font-weight: bolder;
+        top: 20rem;
+        /* bottom: 0rem; */
+    }
+    .qoutes {
+        font-size: 1rem;
+        font-weight: bolder;
+        bottom: 2rem;
+    }
+    .qoutes h2 {
+        font-size: 1.2rem;
+        font-weight: bolder;
+    }
+    .name {
+        font-size: 1rem;
+        top: 35%;
+    }
+}
